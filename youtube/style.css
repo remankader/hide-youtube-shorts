@@ -1,0 +1,12 @@
+#items.ytd-grid-renderer
+  > ytd-grid-video-renderer:has(
+    ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]
+  ) {
+  display: none;
+}
+
+ytd-item-section-renderer:not(:has(ytd-grid-renderer)):has(
+    ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]
+  ) {
+  display: none;
+}
